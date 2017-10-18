@@ -1,0 +1,36 @@
+<!--publish.wxml-->
+<view class="publish">
+  <!-- 图书详情 -->
+  <view class="item-main flex" bindtap="goDetail" data-type="{{index}}">
+    <image class="book-img" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1503291631679&di=cdd486899f08c882c4d11fa8e028456d&imgtype=0&src=http%3A%2F%2Fwww.qqzhi.com%2Fuploadpic%2F2015-01-27%2F010910579.jpg"></image>
+    <view class="book-info flex-1">
+      <view class="name">心灵的焦灼</view>
+      <view class="author">[奥]斯台芬 / 上海译文出版社</view>
+      <view class="intro">这是斯台芬生前面世的唯一的一部长篇小说。</view>
+      <view class="price">
+      ￥39.00【免费送给需要的人】
+      </view>
+    </view>
+  </view>
+  <view class="desc">
+    <view class="desc-head">
+      <text class="title bold">享书描述</text>
+    </view>
+    <view class="desc-input">
+      <textarea class="text" placeholder="随便写点读后感或者你与书的小故事，为爱书找个好的新主人吧！想要换书也可在此注明。可添加下方标签~" placeholder-class="phcolor"/>
+    </view>
+    <view class="share-tags fix">
+      <text class="tag">教会成长</text>
+      <text class="tag">陪我十年</text>
+      <text class="tag" wx:for="{{[1, 2, 3]}}" wx:key="{{index}}">下午茶必备</text>
+    </view>
+  </view>
+  <view class="btn-group">
+    <view class="btn dopub" bindtap="doPublish">
+     发布
+    </view>
+    <view class="btn flex-1 next">
+     扫描下一本
+    </view>
+  </view>
+</view>

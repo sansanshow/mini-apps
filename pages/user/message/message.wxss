@@ -1,0 +1,40 @@
+/* message.wxss */
+.msg{
+  
+}
+.msg-item{
+  padding: 0 30rpx;
+  box-sizing: border-box;
+  padding-top: 23rpx;
+  height: 166rpx;
+  border-bottom: 1rpx solid #ccc;
+}
+.msg-item .head .img{
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 10rpx;
+}
+.msg-item .main{
+  margin-left: 28rpx;
+  line-height: 48rpx;
+}
+.msg-item .main .status{
+  height: 48rpx;
+  font-size: 26rpx;
+  color: #999;
+}
+.msg-item .main .book{
+  height: 48rpx;
+  margin-top: 18rpx;
+  font-size: 30rpx;
+  color: #89534a;
+}
+.msg-item .time{
+  text-align: right;
+  width: 110rpx;
+  height: 48rpx;
+  line-height: 48rpx;
+  font-size: 20rpx;
+  color: #999;
+  overflow: hidden;
+}

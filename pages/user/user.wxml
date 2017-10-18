@@ -1,0 +1,92 @@
+<!--user.wxml-->
+<view class="mwrap user">
+  <view class="user-info block flex">
+    <view class="info flex-1">
+      <image class="head-img f_l" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1503291631679&di=cdd486899f08c882c4d11fa8e028456d&imgtype=0&src=http%3A%2F%2Fwww.qqzhi.com%2Fuploadpic%2F2015-01-27%2F010910579.jpg"></image>
+      <text class="name f_l">晨晨</text>
+      <image class="gender" src="../../images/index/female.png"></image>
+    </view>
+    <navigator  url="/pages/user/auth/auth" hover-stay-time="300"  class="btn-auth center">
+      立即认证
+    </navigator>
+  </view>
+  <!-- block1 -->
+  <view class="block">
+    <navigator url="/pages/user/account/account" hover-stay-time="300" class="line flex">
+      <view class="icon">
+        <image class="icon-img" src="../../images/user/i-account.png"></image>
+      </view>
+      <view class="text flex-1 under-line flex">
+        <text>我的账户</text>
+        <view class="link-text flex-1">16布克币</view>
+        <image class="arrows" src="../../images/user/i-arrows.png"></image>
+      </view>
+    </navigator>
+    <navigator url="/pages/user/message/message" hover-stay-time="300" class="line flex">
+      <view class="icon">
+        <image class="icon-img" src="../../images/user/i-message.png"></image>
+      </view>
+      <view class="text flex-1 flex">
+        <text>消息中心</text>
+        <view class="link-text flex-1">小雅想要您的书~</view>
+        <image class="arrows" src="../../images/user/i-arrows.png"></image>
+      </view>
+    </navigator>
+  </view>
+  <!-- block2 -->
+  <view class="block">
+    <navigator url="/pages/user/mybook/mybook?from=1" hover-stay-time="300" class="line flex">
+      <view class="icon">
+        <image class="icon-img" src="../../images/user/i-pub.png"></image>
+      </view>
+      <view class="text flex-1 under-line flex">
+        <text>我发布的</text>
+        <view class="link-text flex-1"></view>
+        <image class="arrows" src="../../images/user/i-arrows.png"></image>
+      </view>
+    </navigator>
+    <navigator url="/pages/user/mybook/mybook?from=2" hover-stay-time="300" class="line flex">
+      <view class="icon">
+        <image class="icon-img" src="../../images/user/i-share.png"></image>
+      </view>
+      <view class="text flex-1 under-line flex">
+        <text>我分享的</text>
+        <view class="link-text flex-1"></view>
+        <image class="arrows" src="../../images/user/i-arrows.png"></image>
+      </view>
+    </navigator>
+    <navigator url="/pages/user/mybook/mybook?from=3" hover-stay-time="300" class="line flex">
+      <view class="icon">
+        <image class="icon-img" src="../../images/user/i-fetch.png"></image>
+      </view>
+      <view class="text flex-1 flex">
+        <text>我领取的</text>
+        <view class="link-text flex-1"></view>
+        <image class="arrows" src="../../images/user/i-arrows.png"></image>
+      </view>
+    </navigator>
+  </view>
+  <!-- block3 -->
+  <view class="block">
+    <navigator url="" hover-stay-time="300" class="line flex">
+      <view class="icon">
+        <image class="icon-img" src="../../images/user/i-service.png"></image>
+      </view>
+      <view class="text flex-1 under-line flex">
+        <text>客服中心</text>
+        <view class="link-text flex-1"></view>
+        <image class="arrows" src="../../images/user/i-arrows.png"></image>
+      </view>
+    </navigator>
+    <navigator url="" hover-stay-time="300" class="line flex">
+      <view class="icon">
+        <image class="icon-img" src="../../images/user/i-about.png"></image>
+      </view>
+      <view class="text flex-1 flex">
+        <text>关于布克</text>
+        <view class="link-text flex-1"></view>
+        <image class="arrows" src="../../images/user/i-arrows.png"></image>
+      </view>
+    </navigator>
+  </view>
+</view>

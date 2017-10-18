@@ -1,0 +1,46 @@
+/* account.wxss */
+.top{
+  height: 202rpx;
+}
+.top .icon{
+  width: 136rpx;
+  height: 125rpx;
+  margin-top: 33rpx;
+  margin-right: 45rpx;
+}
+.top .left{
+  padding-left: 60rpx;
+}
+.left .text{
+  font-weight: 600;
+  padding-top: 40rpx;
+  color: #333;
+  font-size: 32rpx;
+}
+.left .coin{
+  font-weight: 800;
+  margin-top: 40rpx;
+  color: #89534a;
+  font-size: 72rpx;
+}
+.left .gold{
+  width: 37rpx;
+  height: 38rpx;
+  vertical-align: middle;
+}
+.qa{
+  font-size: 30rpx;
+  margin-top: 20rpx;
+  line-height: 48rpx;
+  padding: 62rpx 30rpx 0rpx 82rpx;
+}
+.qa .q{
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 18rpx;
+}
+.qa .a{
+  color: #666;
+  margin-bottom: 40rpx;
+  padding-left: 26rpx;
+}

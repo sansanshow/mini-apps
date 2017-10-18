@@ -1,0 +1,134 @@
+<!--detail.wxml-->
+<import src="../../common/bookitem/book-item.wxml" />
+<view class="mwrap msg-detail">
+  <!-- 顶部状态 -->
+  <view class="status bg-fff">
+    <!-- 1：书主拒绝 -->
+    <view wx:if="{{type == 0}}" class="status1">
+      <view class="img-wrap center">
+        <image class="img" src="../../../images/message/bg-cry.png"></image>
+      </view>
+      <view class="status-text center">
+      书主拒绝了您的要书请求
+      </view>
+    </view>
+    <!-- 2：您已拒绝 -->
+    <view wx:if="{{type == 1}}" class="status2">
+      <view class="img-wrap center">
+        <image class="img" src="../../../images/message/bg-cry.png"></image>
+      </view>
+      <view class="status-text center">
+      您已拒绝了小雅的要书请求
+      </view>
+    </view>
+    <!-- 3：您已取消 -->
+    <view wx:if="{{type == 2}}" class="status2">
+      <view class="img-wrap center">
+        <image class="img" src="../../../images/message/bg-2.png"></image>
+      </view>
+      <view class="status-text center">
+      您已取消了要书请求
+      </view>
+    </view>
+    <!-- 4：书主已同意 -->
+    <view wx:if="{{type == 3}}" class="status2">
+      <view class="img-wrap center">
+        <image class="img" src="../../../images/message/bg-2.png"></image>
+      </view>
+      <view class="link-phone center">
+        15956663222
+      </view>
+      <view class="status-text center">
+      书主已同意您的请求，请尽快联系TA约定要书的时间地点。
+      </view>
+      <view class="btn-copy" bindtap="doCopyLink" data-copy="15956663222">
+        一键复制号码
+      </view>
+    </view>
+    <!-- 5：书主已确认 -->
+    <view wx:if="{{type == 4}}" class="status2">
+      <view class="img-wrap center">
+        <image class="img" src="../../../images/message/bg-2.png"></image>
+      </view>
+      <view class="status-text center">
+      书主已确认您领到书籍，请您尽快确认。
+      </view>
+      <view class="btn-copy">
+        我已领到书
+      </view>
+      <!-- tips -->
+      <view class="tips center">
+        <image class="icon heart" src="../../../images/publish/i-heart.png"></image>
+        <text>双方确认可以获得</text>
+        <image class="icon ibk" src="../../../images/publish/i-textBK.png"></image>
+        <text class="m-color">+1布克币</text>
+        <text>奖励！</text>
+      </view>
+      <view class="what center">
+        <image class="icon ask" src="../../../images/publish/i-question.png"></image>
+        <navigator class="a-link" hover-class="none" url="/pages/user/account/account">什么是布克币？</navigator>
+      </view>
+    </view>
+    <!-- 6：xx向您发起要书请求 -->
+    <view wx:if="{{type == 5}}" class="status2">
+      <view class="head-wrap center">
+        <view class="head">
+          <image class="head-img" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1503291631679&di=cdd486899f08c882c4d11fa8e028456d&imgtype=0&src=http%3A%2F%2Fwww.qqzhi.com%2Fuploadpic%2F2015-01-27%2F010910579.jpg"></image>
+          <image class="gender" src="../../../images/message/i-msg-female.png"></image>
+        </view>
+        <text class="distance">距离我1km</text>
+      </view>
+      <view class="status-text center">
+        小雅向您发起了要书请求
+      </view>
+      <!-- 留言 -->
+      <view class="remark center">
+      “我很需要这本书，我会好好珍惜的”
+      </view>
+      <!-- 操作按钮 -->
+      <view class="btns center">
+        <text class="btn btn1">残忍地拒绝</text>
+        <text class="btn btn2">同意TA的请求</text>
+      </view>
+    </view>
+    <!-- 7：xx向您发起要书请求_给书完毕 -->
+    <view wx:if="{{type == 6}}" class="status2">
+      <view class="head-wrap center">
+        <view class="head">
+          <image class="head-img" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1503291631679&di=cdd486899f08c882c4d11fa8e028456d&imgtype=0&src=http%3A%2F%2Fwww.qqzhi.com%2Fuploadpic%2F2015-01-27%2F010910579.jpg"></image>
+          <image class="gender" src="../../../images/message/i-msg-female.png"></image>
+        </view>
+        <text class="distance">距离我1km</text>
+      </view>
+      <view class="status-text center">
+        小雅向您发起了要书请求
+      </view>
+      <!-- 留言 -->
+      <view class="remark center">
+      “我很需要这本书，我会好好珍惜的”
+      </view>
+      <!-- 状态说明 -->
+      <view class="status-text-big center">
+        您已同意TA的请求，请耐心等待TA联系您
+      </view>
+      <!-- 操作按钮 -->
+      <view class="btns center">
+        <text class="btn btn1">我已给书完毕</text>
+      </view>
+      <!-- tips -->
+      <view class="tips center">
+        <image class="icon heart" src="../../../images/publish/i-heart.png"></image>
+        <text>双方确认可以获得</text>
+        <image class="icon ibk" src="../../../images/publish/i-textBK.png"></image>
+        <text class="m-color">+1布克币</text>
+        <text>奖励！</text>
+      </view>
+      <view class="what center">
+        <image class="icon ask" src="../../../images/publish/i-question.png"></image>
+        <navigator class="a-link" hover-class="none" url="/pages/user/account/account">什么是布克币？</navigator>
+      </view>
+    </view>
+  </view>
+  <!-- 图书信息 -->
+  <template is="bookitem" data="{{book:book,type:1}}"/>
+</view>

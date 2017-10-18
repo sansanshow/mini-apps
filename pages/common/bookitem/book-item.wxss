@@ -1,0 +1,70 @@
+/* book-item.wxss */
+.book-item{
+  padding: 24rpx 26rpx 24rpx 30rpx;
+  margin-bottom: 10rpx;
+}
+.book-item .item-head{
+  box-sizing: border-box;
+  height: 85rpx;
+}
+.book-item .head{
+  vertical-align: middle;
+}
+.head .head-img{
+  width: 54rpx;
+  height: 54rpx;
+  margin-right: 14rpx;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+.head .head-name{
+  font-size: 24rpx;
+  color: #666;
+  vertical-align: middle;
+  margin-right: 6rpx;
+}
+.head .head-gender{
+  width: 22rpx;
+  height: 22rpx;
+  vertical-align: middle;
+}
+.item-head .distance{
+  font-size: 20rpx;
+  color: #999;
+  line-height: 54rpx;
+}
+.book-item .item-main{
+  height: 254rpx;
+  position: relative;
+}
+.book-img {
+  width: 170rpx;
+  height: 254rpx;
+  margin-right: 25rpx;
+}
+.book-info{
+  height: 100%;
+  overflow: hidden;
+}
+.book-info .name{
+  font-size: 32rpx;
+  color: #333;
+  line-height: 38rpx;
+  height: 38rpx;
+  margin-bottom: 16rpx;
+}
+.book-info .author{
+  font-size: 24rpx;
+  color: #BBB;
+  margin-bottom: 18rpx;
+}
+.book-info .intro{
+  font-size: 24rpx;
+  color: #666;
+  margin-bottom: 23rpx;
+}
+.book-info .explain{
+  font-size: 24rpx;
+  color: #89534a;
+  line-height: 38rpx;
+}

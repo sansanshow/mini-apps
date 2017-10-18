@@ -1,0 +1,25 @@
+
+<!-- 图书详情 -->
+<template name="bookitem">
+  <view class="book-item bg-fff">
+    <view wx:if="{{type == 1}}" class="item-head fix">
+      <view class="head f_l">
+        <image class="head-img" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1503291631679&di=cdd486899f08c882c4d11fa8e028456d&imgtype=0&src=http%3A%2F%2Fwww.qqzhi.com%2Fuploadpic%2F2015-01-27%2F010910579.jpg"></image>
+        <text class="head-name">陈婉婷</text>
+        <image class="head-gender" src="../../../images/index/male.png"></image>
+      </view>
+      <text class="distance f_r">距离我1km</text>
+    </view>
+    <view class="item-main flex">
+      <image class="book-img" src="{{book.imgurl}}"></image>
+      <view class="book-info flex-1">
+        <view class="name">{{book.title}}</view>
+        <view class="author">{{book.author}}</view>
+        <view class="intro">{{book.intro}}</view>
+        <view class="explain">
+        {{book.desc}}
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

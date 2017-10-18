@@ -1,0 +1,77 @@
+/* user.wxss */
+.user{
+  padding-top: 30rpx;
+}
+.block{
+  border-top: 1rpx solid #ccc;
+  border-bottom: 1rpx solid #ccc;
+  margin-bottom: 40rpx;
+  background: #fff;
+}
+.user-info{
+  height: 176rpx;
+  line-height: 176rpx;
+  padding: 0 30rpx;
+}
+.user-info .head-img{
+  margin-top: 21rpx;
+  width: 134rpx;
+  height: 134rpx;
+  border-radius: 50%;
+  border: 1rpx solid #ddd;
+  margin-right: 28rpx;
+}
+.user-info .name{
+  font-size: 34rpx;
+  color: #333;
+  margin-right: 8rpx;
+}
+.user-info .gender{
+  width: 22rpx;
+  height: 22rpx;
+  vertical-align: middle;
+}
+.user-info .btn-auth{
+  margin-top: 59rpx;
+  width: 154rpx;
+  height: 56rpx;
+  line-height: 56rpx;
+  font-size: 28rpx;
+  border-radius: 10rpx;
+  border: 1rpx solid #89534a;
+  color: #89534a;
+}
+.block .line{
+  line-height: 86rpx;
+  color: #333;
+  font-size: 30rpx;
+  height: 86rpx;
+}
+.under-line{
+  border-bottom: 1rpx solid #cccccc;
+}
+.block .line .icon{
+  width: 116rpx;
+  text-align: right;
+  line-height: 86rpx;
+}
+.line .text{
+  padding-right: 30rpx;
+}
+.line .text .link-text{
+  text-align: right;
+  color: #89534a;
+  font-size: 24rpx;
+  padding-right: 22rpx;
+}
+.line .icon-img{
+  width: 44rpx;
+  height: 44rpx;
+  margin-right: 25rpx;
+  margin-top: 21rpx; 
+}
+.line .arrows{
+  width: 14rpx;
+  height: 26rpx;
+  margin-top: 30rpx;
+}

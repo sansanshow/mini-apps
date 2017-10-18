@@ -1,0 +1,35 @@
+/* index.wxss */
+.index{
+  height: 100%;
+}
+.text{
+  padding-top: 68rpx;
+  padding-bottom: 30rpx;
+}
+.text-line{
+  color: #333;
+  font-size: 26rpx;
+  line-height: 48rpx;
+  padding-left: 235rpx;
+}
+.text .spec{
+  color: #89534a;
+  font-size: 30rpx;
+  font-weight: bolder;
+  line-height: 128rpx;
+}
+.upload .btn{
+  margin: 0 auto;
+  width: 334rpx;
+  height: 66rpx;
+  line-height: 66rpx;
+  background: #89534a;
+  color: #fff;
+  font-size: 30rpx;
+  border-radius: 33rpx;
+  margin-bottom: 40rpx;
+}
+.upload .icon{
+  width: 252rpx;
+  height: 253rpx;
+}

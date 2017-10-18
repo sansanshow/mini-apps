@@ -1,0 +1,32 @@
+<!--confirm.wxml-->
+<view class="mwrap confirm-pub">
+  <!-- 图书详情 -->
+  <view class="item-main flex bg-fff" bindtap="goDetail" data-type="{{index}}">
+    <image class="book-img" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1503291631679&di=cdd486899f08c882c4d11fa8e028456d&imgtype=0&src=http%3A%2F%2Fwww.qqzhi.com%2Fuploadpic%2F2015-01-27%2F010910579.jpg"></image>
+    <view class="book-info flex-1">
+      <view class="name">心灵的焦灼</view>
+      <view class="author">[奥]斯台芬 / 上海译文出版社</view>
+      <view class="intro">这是斯台芬生前面世的唯一的一部长篇小说。</view>
+      <view class="explain">
+      “这本书我很喜欢，最近搬家实在是没办法，希望有缘人能将它带走好好保管。”
+      </view>
+    </view>
+  </view>
+  <!-- tips -->
+  <view class="tips center">
+    <image class="icon heart" src="../../../images/publish/i-heart.png"></image>
+    <text>初次发布可获得</text>
+    <image class="icon ibk" src="../../../images/publish/i-textBK.png"></image>
+    <text class="m-color">+1布克币</text>
+    <text>奖励！</text>
+  </view>
+  <view class="what center">
+    <image class="icon ask" src="../../../images/publish/i-question.png"></image>
+    <navigator class="a-link" hover-class="none" url="/pages/user/account/account">什么是布克币？</navigator>
+  </view>
+  <view class="btn-group">
+    <view class="btn flex-1">
+      确认发布
+    </view>
+  </view>
+</view>

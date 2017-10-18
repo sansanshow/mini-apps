@@ -1,0 +1,54 @@
+<!--index.wxml-->
+<view class="mwrap index">
+  <!-- 搜索栏 -->
+  <view class="search-wrap bg-fff flex">
+    <view class="search flex-1 flex">
+      <input placeholder="搜索图书" placeholder-class="phcolor" class="search-input flex-1" confirm-type="搜索" />
+      <image class="search-btn" src="../../images/index/i-search.png"></image>
+    </view>
+    <view class="filter" bindtap="toggleSelect">
+      <text class="filter-text">筛选</text>
+      <image class="filter-icon" src="../../images/index/i-arrows.png"></image>
+    </view>
+  </view>
+  <!-- 下拉遮罩 -->
+  <view wx:if="{{ show }}" class="shade">
+    <view class="select-wrap bg-fff">
+      <view wx:for="{{selectItems}}" bindtap="doFilter" data-index="{{index}}" wx:key="{{index}}" class="select-item">{{item.text}}</view>
+      <!-- <view class="select-item">教辅教材</view>
+      <view class="select-item">科技商业</view>
+      <view class="select-item">小说</view>
+      <view class="select-item">工具书</view>
+      <view class="select-item">人文社科</view>
+      <view class="select-item">居家育儿</view>
+      <view class="select-item">其他</view> -->
+    </view>
+  </view>
+  <!-- 图书列表 -->
+  <scroll-view scroll-y class="list bg-fff" enable-back-to-top="true" bindscrolltolower="load">
+    <view class="head-text center">{{headText}}</view>
+    <view class="list-item section" wx:for="{{indexList}}" wx:key="{{index}}">
+      <!-- 图书头部 -->
+      <view class="item-head fix">
+        <view class="head f_l">
+          <image class="head-img" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1503291631679&di=cdd486899f08c882c4d11fa8e028456d&imgtype=0&src=http%3A%2F%2Fwww.qqzhi.com%2Fuploadpic%2F2015-01-27%2F010910579.jpg"></image>
+          <text class="head-name">陈婉婷</text>
+          <image class="head-gender" src="../../images/index/male.png"></image>
+        </view>
+        <text class="distance f_r">距离我1km</text>
+      </view>
+      <!-- 图书详情 -->
+      <view class="item-main flex" bindtap="goDetail" data-type="{{index}}">
+        <image class="book-img" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1503291631679&di=cdd486899f08c882c4d11fa8e028456d&imgtype=0&src=http%3A%2F%2Fwww.qqzhi.com%2Fuploadpic%2F2015-01-27%2F010910579.jpg"></image>
+        <view class="book-info flex-1">
+          <view class="name">心灵的焦灼</view>
+          <view class="author">[奥]斯台芬 / 上海译文出版社</view>
+          <view class="intro">这是斯台芬生前面世的唯一的一部长篇小说。</view>
+          <view class="explain">
+            “这本书我很喜欢，最近搬家实在是没办法，希望有缘人能将它带走好好保管。”
+          </view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

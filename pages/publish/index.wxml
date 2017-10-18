@@ -1,0 +1,19 @@
+<!--index.wxml-->
+<view class="mwrap index bg-fff">
+  <view class="text">
+    <view class="text-line">家中有很多旧书，</view>
+    <view class="text-line">闲置爱书不舍得丢弃</view>
+    <view class="text-line">希望结交爱读书的朋友，</view>
+    <view class="text-line">分享看书心得。</view>
+    <view class="text-line">....</view>
+    <view class="text-line spec">布克图书来帮你！</view>
+    <view class="text-line">赠与需要的人或者以书换书，</view>
+    <view class="text-line">体验易书的乐趣，</view>
+    <view class="text-line">你，</view>
+    <view class="text-line">不想试试么？↓</view>
+  </view>
+  <view class="upload center">
+    <view class="btn center" bindtap="doScan">扫描书籍条码上传</view>
+    <image class="icon" src="../../images/publish/icon.png"></image>
+  </view>
+</view>

@@ -1,0 +1,20 @@
+<!--message.wxml-->
+<view class="mwrap msg">
+  <view class="list bg-fff">
+    <!-- item -->
+    <navigator wx:for="{{[1, 2, 3, 4, 5, 6, 7]}}"  wx:key="{{index}}" url="/pages/user/message/detail?mtype={{index}}" hover-start-time="5" hover-stay-time="150" class="msg-item flex">
+      <view class="head">
+        <image class="img" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1503291631679&di=cdd486899f08c882c4d11fa8e028456d&imgtype=0&src=http%3A%2F%2Fwww.qqzhi.com%2Fuploadpic%2F2015-01-27%2F010910579.jpg"></image>
+      </view>
+      <view class="main flex-1">
+        <view class="status">
+        菲菲同意的您的请书要求
+        </view>
+        <text class="book">《百年孤独》</text>
+      </view>
+      <view class="time">
+        1小时前
+      </view>
+    </navigator>
+  </view>
+</view>

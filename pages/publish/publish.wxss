@@ -1,0 +1,83 @@
+/* publish.wxss */
+.publish{
+  background: #fff;
+}
+.item-main{
+  padding: 27rpx 30rpx 22rpx;
+  height: 254rpx;
+  position: relative;
+  border-bottom: 10rpx solid #f5f5f5;
+}
+.book-img {
+  width: 170rpx;
+  height: 254rpx;
+  margin-right: 25rpx;
+}
+.book-info{
+  height: 100%;
+  overflow: hidden;
+}
+.book-info .name{
+  font-size: 32rpx;
+  color: #333;
+  line-height: 38rpx;
+  height: 38rpx;
+  margin-bottom: 16rpx;
+}
+.book-info .author{
+  font-size: 24rpx;
+  color: #BBB;
+  margin-bottom: 18rpx;
+}
+.book-info .intro{
+  font-size: 24rpx;
+  color: #666;
+  height: 106rpx;
+  overflow: hidden;
+}
+.book-info .price{
+  font-size: 28rpx;
+  line-height: 38rpx;
+  color: #666;
+}
+.desc{
+   width: 100%;
+}
+.desc .desc-head{ height: 68rpx; padding-left: 30rpx; line-height: 68rpx; border-bottom: 1rpx solid #eaeaea; }
+.desc .desc-head .title{ height: 30rpx; line-height: 1; font-size: 30rpx; color: #333; }
+.desc .desc-input{ width: 100%; padding: 28rpx 30rpx;box-sizing: border-box;}
+.desc .desc-input .text{
+  width: 100%;
+  color: #333;
+  font-size: 30rpx;
+  line-height: 48rpx;
+  height: 146rpx;
+}
+.desc .phcolor {
+  color: #BBB;
+  font-size: 30rpx;
+  line-height: 48rpx;
+}
+.desc .share-tags{
+  padding: 0 30rpx;
+}
+.share-tags .tag{
+  display: inline-block;
+  height: 48rpx;
+  padding: 5rpx 24rpx;
+  font-size: 26rpx;
+  line-height: 48rpx;
+  border-radius: 8rpx;
+  margin-right: 20rpx;
+  margin-bottom: 20rpx;
+  color: #89534a;
+  background: #f5f5f5;
+  text-align: center;
+}
+/* 按钮 */
+.publish .next{
+  background: #6eae9f;
+}
+.publish .dopub{
+  width: 480rpx;
+}

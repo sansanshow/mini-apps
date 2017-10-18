@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/index/detail/detail",
+    "pages/logs/logs",
+    "pages/publish/index",
+    "pages/publish/publish",
+    "pages/publish/confirm/confirm",
+    "pages/user/user",
+    "pages/user/auth/auth",
+    "pages/user/account/account",
+    "pages/user/message/message",
+    "pages/user/message/detail",
+    "pages/user/mybook/mybook"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#000000",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "布克图书",
+    "backgroundColor": "#f5f5f5",
+    "backgroundTextStyle": "dark",
+    "onReachBottomDistance": 50
+  },
+  "tabBar": {
+    "color": "#9999999",
+    "selectedColor": "#89534a",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/index/home.png",
+        "selectedIconPath": "images/index/home-fill.png"
+      },
+      {
+        "pagePath": "pages/publish/index",
+        "text": "发布",
+        "iconPath": "images/index/publish.png",
+        "selectedIconPath": "images/index/publish-fill.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "images/index/people.png",
+        "selectedIconPath": "images/index/people-fill.png"
+      }
+    ]
+  }
+}

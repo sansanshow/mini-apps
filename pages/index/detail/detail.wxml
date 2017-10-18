@@ -1,0 +1,71 @@
+<!--detail.wxml-->
+<view class="mwrap detail">
+  <!-- 图书详情 -->
+  <view class="book-item bg-fff">
+    <view class="item-head fix">
+      <view class="head f_l">
+        <image class="head-img" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1503291631679&di=cdd486899f08c882c4d11fa8e028456d&imgtype=0&src=http%3A%2F%2Fwww.qqzhi.com%2Fuploadpic%2F2015-01-27%2F010910579.jpg"></image>
+        <text class="head-name">陈婉婷</text>
+        <image class="head-gender" src="../../../images/index/male.png"></image>
+      </view>
+      <text class="distance f_r">距离我1km</text>
+    </view>
+    <view class="item-main flex" bindtap="goDetail">
+      <image class="book-img" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1503291631679&di=cdd486899f08c882c4d11fa8e028456d&imgtype=0&src=http%3A%2F%2Fwww.qqzhi.com%2Fuploadpic%2F2015-01-27%2F010910579.jpg"></image>
+      <view class="book-info flex-1">
+        <view class="name">心灵的焦灼</view>
+        <view class="author">[奥]斯台芬 / 上海译文出版社</view>
+        <view class="intro">这是斯台芬生前面世的唯一的一部长篇小说。</view>
+        <view class="explain">
+        “这本书我很喜欢，最近搬家实在是没办法，希望有缘人能将它带走好好保管。”
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 书籍简介 -->
+  <view class="book-intro bg-fff">
+    <view class="intro-head">
+      <text class="title">书籍简介</text>
+    </view>
+    <view class="intro-main">
+    《心灵的焦灼》是奥地利作家斯蒂芬·茨威格在1938年流亡国外时发表的长篇小说，也是他生前面世的唯一的一部长篇小说。
+    </view>
+  </view>
+  <!-- 书主描述 -->
+  <view class="owner-desc bg-fff">
+    <view class="desc-head">
+      <text class="title">书主描述</text>
+    </view>
+    <view class="desc-main">
+    “这本书我很喜欢，最近搬家实在是没办法，希望有缘人能将它带走好好保管。”
+    </view>
+  </view>
+  <!-- 其他书主描述 -->
+  <view class="other-desc bg-fff">
+    <view class="desc-head">
+      <text class="title">其他书主描述</text>
+    </view>
+    <view class="desc-list">
+      <view class="desc-item" wx:for="{{[1, 2, 3]}}" wx:key="{{index}}">
+        <view class="head flex">
+          <view class="info flex-1">
+            <image class="head-img" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1503291631679&di=cdd486899f08c882c4d11fa8e028456d&imgtype=0&src=http%3A%2F%2Fwww.qqzhi.com%2Fuploadpic%2F2015-01-27%2F010910579.jpg"></image>
+            <text class="head-name">陈婉婷</text>
+          </view>
+          <text class="head-time">2天前</text>
+        </view>
+        <view class="content">
+          从小到大最爱的一本书从小到大最爱的一本书从小到大最爱的一本书从小到大最爱的一本书从小到大最爱的一本书从小到大最爱的一本书从小到大最爱的一本书从小到大最爱的一本书从小到大最爱的一本书
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="btn-group">
+    <view wx:if="{{type == 1}}" class="flex-1 btn cancel">
+     下架
+    </view>
+    <view class="flex-2 btn">
+     {{type == 1 ? '编辑' : '我想要'}}
+    </view>
+  </view>
+</view>

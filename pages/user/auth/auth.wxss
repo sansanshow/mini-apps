@@ -1,0 +1,52 @@
+/* auth.wxss */
+.img-wrap {
+  padding: 107rpx 0 80rpx;
+}
+.img-wrap .top-img {
+  width: 214rpx;
+  height: 161rpx;
+}
+.form{
+  padding: 0 30rpx;
+}
+.form-line{
+  height: 84rpx;
+  line-height: 84rpx;
+  border-bottom: 1rpx solid #ccc;
+  margin-bottom: 25rpx;
+}
+.form-line .label{
+  color: #333;
+  font-size: 32rpx;
+  padding-right: 40rpx;
+}
+.form-line .input{
+  height: 84rpx;
+  display: inline-block;
+  vertical-align: middle;
+}
+.confirm{
+  width: 100%;
+  height: 111rpx;
+  background: #89534a;
+  border-radius: 10rpx;
+  font-size: 34rpx;
+  color: #fff;
+  line-height: 111rpx;
+  margin-top: 70rpx;
+}
+.phcolor{
+  color: #ccc;
+  font-size: 32rpx;
+}
+.form-line .send{
+  width: 164rpx;
+  height: 60rpx;
+  margin-top: 12rpx;
+  border-radius: 10rpx;
+  background: #89534a;
+  color: #fff;
+  font-size: 26rpx;
+  line-height: 60rpx;
+  text-align: center;
+}

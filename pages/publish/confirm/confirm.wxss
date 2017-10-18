@@ -1,0 +1,65 @@
+/* confirm.wxss */
+.item-main{
+  padding: 27rpx 30rpx 22rpx;
+  height: 254rpx;
+  position: relative;
+  margin-bottom: 30rpx;
+}
+.book-img {
+  width: 170rpx;
+  height: 254rpx;
+  margin-right: 25rpx;
+}
+.book-info{
+  height: 100%;
+  overflow: hidden;
+}
+.book-info .name{
+  font-size: 32rpx;
+  color: #333;
+  line-height: 38rpx;
+  height: 38rpx;
+  margin-bottom: 16rpx;
+}
+.book-info .author{
+  font-size: 24rpx;
+  color: #BBB;
+  margin-bottom: 18rpx;
+}
+.book-info .intro{
+  font-size: 24rpx;
+  color: #666;
+  margin-bottom: 23rpx;
+}
+.book-info .explain{
+  font-size: 24rpx;
+  color: #89534a;
+  line-height: 38rpx;
+}
+.tips {
+  color: #666;
+  font-size: 24rpx;
+  margin-bottom: 50rpx;
+}
+.tips .icon{
+  vertical-align: middle;
+}
+.tips .heart{
+  width: 21rpx;
+  height: 18rpx;
+  padding-right: 12rpx;
+}
+.tips .ibk{
+  width: 37rpx;
+  height: 38rpx;
+  padding: 0 10rpx 0 14rpx;
+}
+.what .ask{
+  vertical-align: middle;
+  width: 24rpx;
+  height: 24rpx;
+  padding-right: 12rpx;
+}
+.what .a-link{
+  vertical-align: middle;
+}
